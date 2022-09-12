@@ -1,4 +1,8 @@
-Quick Sort，又称**分区交换排序**（partition-exchange sort），最早由[东尼·霍尔](https://zh.wikipedia.org/wiki/東尼·霍爾)提出。
+# Quick Sort
+
+## 简介
+
+Quick Sort, 快速排序，又称**分区交换排序**（partition-exchange sort），最早由[东尼·霍尔](https://zh.wikipedia.org/wiki/東尼·霍爾)提出。
 
 快速排序使用[分治法](https://zh.wikipedia.org/wiki/分治法)（Divide and conquer）策略来把一个序列分为较小和较大的 2 个子序列，然后递归地排序两个子序列。(分而治之) [less] pivot [greater]
 
@@ -9,3 +13,11 @@ Quick Sort，又称**分区交换排序**（partition-exchange sort），最早�
 3. 递归排序子序列：递归地将小于基准值元素的子序列和大于基准值元素的子序列排序。
 
 递归到最底部的判断条件是数列的大小是零或一，此时该数列显然已经有序。
+
+## 分析
+
+时间复杂度：O(nlogn)，最优为 O(nlogn)，最坏为 O(n²)，平均为 O(nlogn)。
+
+空间复杂度：O(logn)
+
+稳定性：不稳定
