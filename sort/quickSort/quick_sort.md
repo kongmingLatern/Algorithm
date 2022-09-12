@@ -1,6 +1,6 @@
 Quick Sort，又称**分区交换排序**（partition-exchange sort），最早由[东尼·霍尔](https://zh.wikipedia.org/wiki/東尼·霍爾)提出。
 
-快速排序使用[分治法](https://zh.wikipedia.org/wiki/分治法)（Divide and conquer）策略来把一个序列分为较小和较大的2个子序列，然后递归地排序两个子序列。(分而治之)   [less]  pivot [greater]
+快速排序使用[分治法](https://zh.wikipedia.org/wiki/分治法)（Divide and conquer）策略来把一个序列分为较小和较大的 2 个子序列，然后递归地排序两个子序列。(分而治之) [less] pivot [greater]
 
 步骤为：
 
