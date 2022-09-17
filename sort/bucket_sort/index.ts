@@ -1,4 +1,4 @@
-function sortArrayForBuckjet(nums: number[], size: number) {
+function sortArrayForBucket(nums: number[], size: number) {
   const len = nums.length
   if (len < 2) {
     return nums
@@ -54,4 +54,4 @@ function swap(a, i, j) {
   ;[a[i], a[j]] = [a[j], a[i]]
 }
 
-console.log(sortArrayForBuckjet([5, 1, 23, 45, 4, 5, 1], 3))
+console.log(sortArrayForBucket([5, 1, 23, 45, 4, 5, 1], 3))
