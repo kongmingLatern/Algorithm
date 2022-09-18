@@ -1,4 +1,4 @@
-export default function sortArray(nums: number[]) {
+export default function shellSort(nums: number[]) {
   let len = nums.length
   if (len === 1) {
     return nums
@@ -23,5 +23,3 @@ export default function sortArray(nums: number[]) {
   }
   return nums
 }
-
-console.log(sortArray([5, 1, 7, 4, 3, 9, 2]))
