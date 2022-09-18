@@ -1,4 +1,4 @@
-function mergeSortArr(nums: number[]) {
+export default function mergeSortArr(nums: number[]) {
   function mergeSort(nums: number[]) {
     const len = nums.length
     if (len === 1) {
