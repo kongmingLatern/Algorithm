@@ -1,4 +1,4 @@
-const sortArrayForRedix = (nums: number[]) => {
+export const sortArrayForRedix = (nums: number[]) => {
   const len = nums.length
   if (len < 2) {
     return nums
