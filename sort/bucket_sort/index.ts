@@ -1,4 +1,4 @@
-function sortArrayForBucket(nums: number[], size: number) {
+export default function sortArrayForBucket(nums: number[], size: number) {
   const len = nums.length
   if (len < 2) {
     return nums
