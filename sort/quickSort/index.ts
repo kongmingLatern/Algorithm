@@ -15,7 +15,8 @@ function sortArray(nums: number[]) {
   }
 
   function partition(nums: number[], left: number, right: number) {
-    let i = left, j = right + 1
+    let i = left,
+      j = right + 1
     let pivot = nums[left]
     while (1) {
       // 这个循环结束的条件就是 nums[++i]>=pivot
@@ -33,10 +34,9 @@ function sortArray(nums: number[]) {
       if (i >= j) {
         break
       }
-      [nums[i], nums[j]] = [nums[j], nums[i]]
+      ;[nums[i], nums[j]] = [nums[j], nums[i]]
     }
-    [nums[left], nums[j]] = [nums[j], nums[left]]
+    ;[nums[left], nums[j]] = [nums[j], nums[left]]
     return j
   }
 }
-console.log(sortArray([5, 2, 3, 1]));

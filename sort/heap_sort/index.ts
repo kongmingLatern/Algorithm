@@ -40,5 +40,3 @@ function max_heapify(nums, start, end) {
 function swap(nums: number[], i: number, j: number) {
   ;[nums[i], nums[j]] = [nums[j], nums[i]]
 }
-
-console.log(heap_sort([1, 4, 5, 6, 1, 2, 3]))

@@ -22,5 +22,3 @@ export const countingSortArray = (nums: number[]) => {
   }
   return res
 }
-
-console.log(countingSortArray([5, 1, 3, 9, 2, 4]))

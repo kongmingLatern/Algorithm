@@ -25,4 +25,3 @@ export default function mergeSortArr(nums: number[]) {
   nums = mergeSort(nums)
   return nums
 }
-console.log(mergeSortArr([5, 2, 3, 1]))
