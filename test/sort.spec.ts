@@ -1,3 +1,4 @@
+import { sortArrayForRedix } from './../sort/redix_sort/index'
 import { describe, expect, it } from 'vitest'
 import { countingSortArray } from './../sort/counting_sort/index'
 import sortArrayForBucket from '../sort/bucket_sort'
@@ -17,8 +18,13 @@ describe('sort', () => {
     expect(countingSortArray([2, 3, 45, 2, 3, 4, 1], 3)).toStrictEqual([1, 2, 2, 3, 3, 4, 45])
   })
 
-  //
+  // 归并排序
   it('merge_sort', () => {
     expect(mergeSortArr([2, 3, 45, 2, 3, 4, 1], 3)).toStrictEqual([1, 2, 2, 3, 3, 4, 45])
   })
+  // 基数排序
+  it('redix_sort', () => {
+    expect(sortArrayForRedix([2, 3, 45, 2, 3, 4, 1], 3)).toStrictEqual([1, 2, 2, 3, 3, 4, 45])
+  })
+  // 希尔排序
 })
