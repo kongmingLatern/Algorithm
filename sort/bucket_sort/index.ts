@@ -53,5 +53,3 @@ const insertSort = function (nums) {
 function swap(a, i, j) {
   ;[a[i], a[j]] = [a[j], a[i]]
 }
-
-console.log(sortArrayForBucket([5, 1, 23, 45, 4, 5, 1], 3))
