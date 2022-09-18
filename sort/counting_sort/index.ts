@@ -1,4 +1,4 @@
-const countingSortArray = (nums: number[]) => {
+export const countingSortArray = (nums: number[]) => {
   const len = nums.length
   if (len < 2) {
     return nums
