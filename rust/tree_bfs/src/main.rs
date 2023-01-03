@@ -1,4 +1,7 @@
 #[derive(Debug, PartialEq, Eq)]
+use std::rc::Rc;
+use std::cell::RefCell;
+use std::collections::VecDeque;
 pub struct TreeNode {
     pub val: i32,
     pub left: Option<Rc<RefCell<TreeNode>>>,
@@ -15,10 +18,6 @@ impl TreeNode {
         }
     }
 }
-
-use std::rc::Rc;
-use std::cell::RefCell;
-use std::collections::VecDeque;
 
 fn level_order(root: Option<Rc<RefCell<TreeNode>>>) -> Vec<i32> {
     let mut res = Vec::new();
