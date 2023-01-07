@@ -1,6 +1,6 @@
-import { levelOrder } from '../tree/print/bfs'
-import { symmetry } from '../tree/symmetry'
-import { TreeNode } from '../utils'
+import { levelOrder } from '../../tree/print/bfs'
+import { symmetry } from '../../tree/symmetry'
+import { TreeNode } from '../../utils'
 
 describe('bfs levelOrder', () => {
   it('should return [3,9,20,null,null,15,7]', () => {

@@ -1,9 +1,9 @@
-import { sortArrayForRedix } from './../sort/redix_sort/index'
-import { countingSortArray } from './../sort/counting_sort/index'
-import sortArrayForBucket from '../sort/bucket_sort'
-import heap_sort from '../sort/heap_sort'
-import mergeSortArr from '../sort/mergeSort'
-import shellSort from '../sort/shellSort'
+import { sortArrayForRedix } from '../../sort/redix_sort/index'
+import { countingSortArray } from '../../sort/counting_sort/index'
+import sortArrayForBucket from '../../sort/bucket_sort'
+import heap_sort from '../../sort/heap_sort'
+import mergeSortArr from '../../sort/mergeSort'
+import shellSort from '../../sort/shellSort'
 describe('sort', () => {
   // 堆排序
   it('heap_sort', () => {
