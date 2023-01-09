@@ -20,7 +20,7 @@ impl Solution {
         let mut head = &mut root;
         while let Some(node) = head {
             if node.val == val {
-                *head = node.next.take();
+            *head = node.next.take();
                 break;
             }
             head = &mut head.as_mut().unwrap().next;
@@ -28,6 +28,21 @@ impl Solution {
         root
     }
 }
+// about take
+
+#[ctr[test]]
+mod test {
+    fn test_take() {
+        let a = [1, 2, 3];
+
+        let mut iter = a.iter().take(2);
+
+        assert_eq!(iter.next(), Some(&1));
+        assert_eq!(iter.next(), Some(&2));
+        assert_eq!(iter.next(), None);
+    }
+}
+
 fn main() {
     Solution::delete_node(Box::new(ListNode::new(10)), 10);
 }
